@@ -1,0 +1,37 @@
+.u-responsiveGrid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .u-responsiveFlexbox {
+    display: flex;
+    flex-wrap: wrap;
+  
+    & > * { flex: 1 1 200px; }
+  }
+  
+  .u-message {
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+  
+    @include mq(m) { font-size: 1.5rem; }
+  }
+  
+  .u-none { display: none; }
+  
+  .u-btn {
+    margin: 1rem auto;
+    padding: .5rem 1rem;
+    outline: 0;
+    border: 0;
+    border-radius: .25rem;
+    background-color: var(--alternate-modal-color);
+    cursor: pointer;
+    transition: all .3s ease;
+  
+    &:hover { background-color: var(--alternate-color); }
+  }
+  
+  
